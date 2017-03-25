@@ -186,7 +186,7 @@
                     circles[i].fillColor.hue += 1;
                     circles[i].scale(0.9);
                     if(circles[i].bounds.width < 1) {
-                        circles[i].scale(0);
+                        circles[i].remove();
                         circles.splice(i, 1);
                     }
                 }
